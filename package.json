@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc-watch --onSuccess \"node dist/index.js\"",
-    "doc": "typedoc"
+    "doc": "typedoc",
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
