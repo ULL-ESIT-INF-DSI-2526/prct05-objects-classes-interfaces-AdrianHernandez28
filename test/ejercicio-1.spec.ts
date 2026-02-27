@@ -160,3 +160,61 @@ describe("ArchiveBibliography", () => {
     archive.printResults(results); // solo comprobamos que no lanza error
   });
 });
+
+// =====================
+// Tests extra para cobertura 100%
+// =====================
+describe("ArchiveBibliography - Cobertura completa", () => {
+  test("Search con filtro inválido ejecuta default", () => {
+    const results = archive.search("INVALID" as Filter, "algo");
+    expect(results.length).toBe(0); // forzamos el default del switch
+  });
+
+  test("Search con value vacío", () => {
+    const results = archive.search(Filter.TITLE, "");
+    expect(results.length).toBe(3); // todos coinciden con string vacío
+  });
+
+  test("printResults con array vacío no rompe", () => {
+    archive.printResults([]);
+  });
+
+  test("Artículo sin autores ni keywords", () => {
+    const emptyArticle = new BibliographicArticle(
+      "Empty Article",
+      [],
+      [],
+      "Sin autores ni keywords",
+      new Date("2025-01-01"),
+      5,
+      "Editorial X"
+    );
+    // Probar getIEEE no rompe
+    const ieee = emptyArticle.getIEEE();
+    expect(ieee).toContain("Empty Article");
+  });
+});
+
+describe("ArchiveBibliography - extra", () => {
+  test("Search con filtro inválido ejecuta default", () => {
+    const results = archive.search("INVALID" as Filter, "algo");
+    expect(results.length).toBe(0); // forzamos la rama default
+  });
+
+  test("Búsqueda por EDITORIAL funciona correctamente", () => {
+    const results = archive.search(Filter.EDITORIAL, "editorial a");
+    expect(results.length).toBe(1);
+    expect(results[0].title).toBe("TypeScript Basics");
+  });
+
+  test("Búsqueda por DATE funciona correctamente", () => {
+    const results = archive.search(Filter.DATE, "2025");
+    expect(results.length).toBe(1);
+    expect(results[0].title).toBe("Frontend Monthly");
+  });
+
+  test("Print muestra todo el archivo sin errores", () => {
+    archive.print(); // solo comprobamos que no lanza error
+    expect(archive.archive.length).toBe(3); // confirmamos que sigue intacto
+  });
+});
