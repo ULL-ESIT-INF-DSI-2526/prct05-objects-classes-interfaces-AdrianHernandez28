@@ -1,2 +1,31 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-ciDUVo2)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=22870625)
+# 📖 prct05-objects-classes-interfaces
+
+Este proyecto contiene la práctica 5 de **Objetos, Clases e Interfaces**, desarrollada en TypeScript con tres ejercicios principales, además se hace uso de nuevas herramientas, **github actions**.
+
+---
+
+## 📝 Ejercicios
+
+### 1. Gestor de referencias bibliográficas
+- Permite almacenar y gestionar elementos bibliográficos como artículos de revista, capítulos de libro o trabajos de fin de grado/máster.  
+- Cada elemento incluye: título, autores, palabras clave, resumen, fecha de publicación, páginas y editorial, con información adicional según tipología.  
+- Funcionalidades:
+  - Mostrar todos los elementos en tabla.  
+  - Búsquedas por palabras clave, título, autores, fecha o editorial.  
+  - Exportación de referencias en formato IEEE.  
+
+### 2. Conecta 4
+- Implementación del juego de mesa clásico en consola.  
+- Características:
+  - Tablero de 6x7 con turnos alternos entre dos jugadores.  
+  - Verificación de columna completa antes de colocar ficha.  
+  - Detección de ganador por filas, columnas o diagonales.  
+  - Visualización del tablero tras cada jugada.  
+
+### 3. Recetario
+- Sistema para almacenar chefs, sus recetas y los pasos de cada receta.  
+- Cada paso incluye descripción, duración, etiquetas, opcionalidad y número de veces completado.  
+- Funcionalidades:
+  - Mostrar chefs, recetas y pasos en tabla.  
+  - Búsquedas por chef, receta o paso.  
+  - Cálculo del número total de pasos y del tiempo de elaboración (rango si hay pasos opcionales).  
