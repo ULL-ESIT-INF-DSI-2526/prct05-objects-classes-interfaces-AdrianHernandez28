@@ -1,10 +1,10 @@
-# :rocket: prct05-objects-classes-interfaces
+# prct05-objects-classes-interfaces
 
 Este proyecto contiene la práctica 5 de **Objetos, Clases e Interfaces**, desarrollada en TypeScript con tres ejercicios principales, además se hace uso de nuevas herramientas, **github actions**.
 
 ---
 
-## 📝 Ejercicios
+## Ejercicios
 
 ### 1. Gestor de referencias bibliográficas
 - Permite almacenar y gestionar elementos bibliográficos como artículos de revista, capítulos de libro o trabajos de fin de grado/máster.  
