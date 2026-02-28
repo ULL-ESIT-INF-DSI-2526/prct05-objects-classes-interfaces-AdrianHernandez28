@@ -1,4 +1,4 @@
-# 📖 prct05-objects-classes-interfaces
+# :rocket: prct05-objects-classes-interfaces
 
 Este proyecto contiene la práctica 5 de **Objetos, Clases e Interfaces**, desarrollada en TypeScript con tres ejercicios principales, además se hace uso de nuevas herramientas, **github actions**.
 
